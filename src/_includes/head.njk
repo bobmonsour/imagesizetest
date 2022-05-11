@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image size test with eleventy-img plugin</title>
+  <meta name="generator" content="{{ eleventy.generator }}" />
+  <style>
+
+    .container {
+      width: 95vw;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    img[width] {
+      width: auto; /* Defer to max-width */
+    }
+
+    img[width][height] {
+      height: auto; /* Preserve aspect ratio */
+    }
+
+  </style>
+</head>
